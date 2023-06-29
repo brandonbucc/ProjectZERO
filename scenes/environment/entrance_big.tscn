@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b6qcrdohljiam"]
 
 [ext_resource type="Script" path="res://scenes/environment/entrance_big.gd" id="1_cj00h"]
-[ext_resource type="Texture2D" uid="uid://dne1hh7x648u3" path="res://graphics/Environment/entrance_big.png" id="1_pxuwo"]
+[ext_resource type="Texture2D" uid="uid://dne1hh7x648u3" path="res://graphics/environment/entrance_big.png" id="1_pxuwo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l42m0"]
 size = Vector2(430, 138)

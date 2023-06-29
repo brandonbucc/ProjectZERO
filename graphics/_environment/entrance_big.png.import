@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dne1hh7x648u3"
-path="res://.godot/imported/entrance_big.png-54302b857949334ea155d41afe5843d0.ctex"
+path="res://.godot/imported/entrance_big.png-c3db8b0b458d45fcad88b080914d952e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Environment/entrance_big.png"
-dest_files=["res://.godot/imported/entrance_big.png-54302b857949334ea155d41afe5843d0.ctex"]
+source_file="res://graphics/environment/entrance_big.png"
+dest_files=["res://.godot/imported/entrance_big.png-c3db8b0b458d45fcad88b080914d952e.ctex"]
 
 [params]
 
