@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://enlxfsn0u5eh"]
+
+[ext_resource type="Script" path="res://scenes/levels/test.gd" id="1_8kaq8"]
+[ext_resource type="PackedScene" uid="uid://b6qcrdohljiam" path="res://scenes/environment/entrance_big.tscn" id="2_xjmg4"]
+[ext_resource type="PackedScene" uid="uid://wo2wtbuyw82k" path="res://scenes/player/player.tscn" id="3_ugkea"]
+
+[node name="Test" type="Node2D"]
+script = ExtResource("1_8kaq8")
+
+[node name="EntranceBig" parent="." instance=ExtResource("2_xjmg4")]
+position = Vector2(604, 64)
+
+[node name="Player" parent="." instance=ExtResource("3_ugkea")]
+position = Vector2(140, 593)
+
+[connection signal="door_entered" from="EntranceBig" to="." method="_on_entrance_big_door_entered"]
