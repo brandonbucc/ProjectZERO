@@ -9,20 +9,26 @@
 script = ExtResource("1_jrax3")
 
 [node name="PlayerSprite" type="Sprite2D" parent="."]
-position = Vector2(0, -30)
+position = Vector2(30, 0)
+rotation = 1.5708
 texture = ExtResource("1_iwc67")
 
 [node name="PlayerCollisionShape" type="CollisionShape2D" parent="."]
 scale = Vector2(5, 5)
 shape = SubResource("CircleShape2D_1fbad")
 
-[node name="ShootTimer" type="Timer" parent="."]
-wait_time = 0.5
+[node name="Timers" type="Node2D" parent="."]
+
+[node name="ShootTimer" type="Timer" parent="Timers"]
+wait_time = 0.25
 one_shot = true
 
-[node name="GrenadeTimer" type="Timer" parent="."]
+[node name="GrenadeTimer" type="Timer" parent="Timers"]
 wait_time = 2.0
 one_shot = true
 
-[connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]
-[connection signal="timeout" from="GrenadeTimer" to="." method="_on_grenade_timer_timeout"]
+[node name="ShootStart" type="Marker2D" parent="."]
+position = Vector2(104, 17)
+
+[connection signal="timeout" from="Timers/ShootTimer" to="." method="_on_shoot_timer_timeout"]
+[connection signal="timeout" from="Timers/GrenadeTimer" to="." method="_on_grenade_timer_timeout"]

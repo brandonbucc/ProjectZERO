@@ -10,7 +10,15 @@ script = ExtResource("1_8kaq8")
 [node name="EntranceBig" parent="." instance=ExtResource("2_xjmg4")]
 position = Vector2(604, 64)
 
+[node name="Projectiles" type="Node2D" parent="."]
+
 [node name="Player" parent="." instance=ExtResource("3_ugkea")]
 position = Vector2(140, 593)
 
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(0.75, 0.75)
+position_smoothing_enabled = true
+
 [connection signal="door_entered" from="EntranceBig" to="." method="_on_entrance_big_door_entered"]
+[connection signal="player_grenade" from="Player" to="." method="_on_player_player_grenade"]
+[connection signal="player_shoot" from="Player" to="." method="_on_player_player_shoot"]
